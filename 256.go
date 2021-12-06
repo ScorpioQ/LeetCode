@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func minInt(a, b int) int {
 	if a < b {
 		return a
@@ -17,10 +19,10 @@ func minCost(costs [][]int) int {
 	return minInt(costs[0][0], minInt(costs[0][1], costs[0][2]))
 }
 
-// func main() {
-// 	fmt.Println(minCost([][]int{
-// 		{17, 2, 17},
-// 		{16, 16, 5},
-// 		{14, 3, 19},
-// 	}) == 10)
-// }
+func main() {
+	fmt.Println(minCost([][]int{
+		{17, 2, 17},
+		{16, 16, 5},
+		{14, 3, 19},
+	}) == 10)
+}

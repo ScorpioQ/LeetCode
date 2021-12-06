@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func consecutiveNumbersSum(n int) int {
 	res := 0
 	count := 1
@@ -19,6 +21,6 @@ func consecutiveNumbersSum(n int) int {
 	return res
 }
 
-// func main() {
-// 	fmt.Println(consecutiveNumbersSum(3))
-// }
+func main() {
+	fmt.Println(consecutiveNumbersSum(3))
+}
